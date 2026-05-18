@@ -8,7 +8,7 @@ from bot.logger_config import setup_logger
 
 logger = setup_logger()
 
-BASE_URL = "https://testnet.binancefuture.com"
+BASE_URL = "https://demo-fapi.binance.com"
 
 class BinanceClient:
     def __init__(self, api_key: str, api_secret: str):
@@ -36,7 +36,7 @@ class BinanceClient:
     
     def post(self, endpoint: str, params: dict) -> dict:
         signed_params = self._sign(params)
-        logger.debug(f"Request → {endpoint} | params: { {k: v for k, v in params.items() if k != 'signature'} }")
+        logger.debug(f"Request -> {endpoint} | params: { {k: v for k, v in params.items() if k != 'signature'} }")
 
         try:
             response = self.session.post(
@@ -46,12 +46,23 @@ class BinanceClient:
             )
             response.raise_for_status()       # 4xx/5xx pe exception uthao
             data = response.json()
-            logger.debug(f"Response ← status={response.status_code} | body={data}")
+            logger.debug(f"Response <- status={response.status_code} | body={data}")
             return data
 
         except requests.exceptions.HTTPError as e:
-            error_body =  e.response.json() if e.response else {}
-            logger.error(f"HTTP error | code={error_body.get('code')} msg={error_body.get('msg')}")
+            print("\n========== BINANCE RAW RESPONSE ==========")
+
+            if e.response is not None:
+                print("Status Code:", e.response.status_code)
+                print("Response Text:", e.response.text)
+
+                try:
+                  print("JSON:", e.response.json())
+                except Exception:
+                    print("Could not parse JSON response")
+
+            print("==========================================\n")
+
             raise
         except requests.exceptions.ConnectionError :
             logger.error("Network unreachable — check internet connection")

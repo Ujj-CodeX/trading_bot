@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from bot.client import BinanceClient
 from bot.orders import place_order
 from bot.validators import validate_order
-from bot.logging_config import setup_logger
+from bot.logger_config import setup_logger
 
 load_dotenv()
 logger = setup_logger()
