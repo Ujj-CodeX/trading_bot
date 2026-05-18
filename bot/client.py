@@ -8,7 +8,7 @@ from bot.logger_config import setup_logger
 
 logger = setup_logger()
 
-BASE_URL  = " https://testnet.binancefuture.com"
+BASE_URL = "https://testnet.binancefuture.com"
 
 class BinanceClient:
     def __init__(self, api_key: str, api_secret: str):
