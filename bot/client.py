@@ -50,19 +50,8 @@ class BinanceClient:
             return data
 
         except requests.exceptions.HTTPError as e:
-            print("\n========== BINANCE RAW RESPONSE ==========")
-
-            if e.response is not None:
-                print("Status Code:", e.response.status_code)
-                print("Response Text:", e.response.text)
-
-                try:
-                  print("JSON:", e.response.json())
-                except Exception:
-                    print("Could not parse JSON response")
-
-            print("==========================================\n")
-
+            error_body =  e.response.json() if e.response else {}
+            logger.error(f"HTTP error | code={error_body.get('code')} msg={error_body.get('msg')}")
             raise
         except requests.exceptions.ConnectionError :
             logger.error("Network unreachable — check internet connection")
