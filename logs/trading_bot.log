@@ -1,0 +1,32 @@
+2026-05-19 01:10:31 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.01 price=None
+2026-05-19 01:10:34 |  ERROR     | HTTP error | code=None msg=None
+2026-05-19 01:10:34 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1779133231845&signature=1bc635b36eb2c6b95a0eea78bd1774c6b5518664cf3e92bd95bf395fc691d189
+2026-05-19 01:12:47 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.01 price=None
+2026-05-19 01:12:47 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779133367553}
+2026-05-19 01:12:49 |  ERROR     | HTTP error | code=None msg=None
+2026-05-19 01:12:49 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1779133367553&signature=49588070c5ccd2b06a2cd34a40e64af818251f2ec63d40d7daaaad1bb567f00e
+2026-05-19 01:17:10 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.01 price=None
+2026-05-19 01:17:10 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779133630456}
+2026-05-19 01:17:13 |  ERROR     | HTTP error | code=None msg=None
+2026-05-19 01:17:13 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://demo-fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1779133630456&signature=4878c412aff94c1bf959fd2ebc19b520f7e046fd1a54f60ff9a0594cebde8eb8
+2026-05-19 01:22:29 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.01 price=None
+2026-05-19 01:22:29 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779133949056}
+2026-05-19 01:22:31 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://demo-fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1779133949056&signature=4e63d487242a63101a574b6e43cc2fe808196e6cd0e7495c72bdced52d0a68b1
+2026-05-19 01:24:09 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.001 price=None
+2026-05-19 01:24:09 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1779134049014}
+2026-05-19 01:24:10 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://demo-fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1779134049014&signature=9a6984ce04dbe8ecf1ef5e7d4e7a60d6009a93947acce0c156e76f19465217b4
+2026-05-19 01:29:07 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=1e-05 price=None
+2026-05-19 01:29:07 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1e-05, 'timestamp': 1779134347306}
+2026-05-19 01:29:09 |  ERROR     | Order failed: 400 Client Error: Bad Request for url: https://demo-fapi.binance.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=1e-05&timestamp=1779134347306&signature=61718c89c96aba0ddaf2080b2215fe1c2f6ad3dea13f9d689a487dc187123240
+2026-05-19 01:30:08 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.001 price=None
+2026-05-19 01:30:08 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1779134408503}
+2026-05-19 01:30:10 |  DEBUG     | Response <- status=200 | body={'orderId': 13157829550, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '1wQILdS3tRJksnvex8KPcR', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1779134410200}
+2026-05-19 01:30:10 |  INFO      | Order success | id=13157829550 status=NEW executedQty=0.0000
+2026-05-19 01:31:35 |  INFO      | Placing order | LIMIT SELL BTCUSDT qty=0.001 price=200000.0
+2026-05-19 01:31:35 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 200000.0, 'timeInForce': 'GTC', 'timestamp': 1779134495584}
+2026-05-19 01:31:37 |  DEBUG     | Response <- status=200 | body={'orderId': 13157835346, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'oLpP2coRm4tf8vVgPj9Zbu', 'price': '200000.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1779134497486}
+2026-05-19 01:31:37 |  INFO      | Order success | id=13157835346 status=NEW executedQty=0.0000
+2026-05-19 14:13:49 |  INFO      | Placing order | MARKET BUY BTCUSDT qty=0.002 price=None
+2026-05-19 14:13:49 |  DEBUG     | Request -> /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1779180229598}
+2026-05-19 14:13:54 |  DEBUG     | Response <- status=200 | body={'orderId': 13161315467, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'a4HZB5G9GqMVUe0Mc2df6y', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0020', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1779180234522}
+2026-05-19 14:13:54 |  INFO      | Order success | id=13161315467 status=NEW executedQty=0.0000
