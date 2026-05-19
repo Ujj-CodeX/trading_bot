@@ -196,4 +196,9 @@ pip install -r requirements.txt
 
 ## Notes on Testnet vs Production
 
-This bot targets `https://demo-fapi.binance.com`. To point to production, change `BASE_URL` in `bot/client.py` to `https://fapi.binance.com` and replace credentials. No other code changes needed — this separation is intentional.
+During development, `https://demo-fapi.binance.com` was used as the 
+base URL as it accepted the generated API credentials correctly. 
+The standard testnet URL `https://testnet.binancefuture.com` returned 
+authentication errors (-2015) with the same credentials. 
+To switch to production, change BASE_URL in `bot/client.py` 
+to `https://fapi.binance.com` and replace credentials.
